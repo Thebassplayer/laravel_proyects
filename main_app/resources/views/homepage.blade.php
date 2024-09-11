@@ -7,6 +7,13 @@
 </head>
 <body>
   <h1>Welcome to your homepage!</h1>
+  <h2>{{$name}}</h2>
+
+  <ul>
+  @foreach($Allanimals as $animal)
+    <li>{{ $animal }}</li>
+    @endforeach
+  </ul>
   <a href="/about">About</a>
 </body>
 </html>
